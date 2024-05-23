@@ -1,0 +1,64 @@
+canvas {
+    display: block; /* Removes the margin around the canvas */
+    background: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+body, html {
+    height: 100%;
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #010108;
+    overflow: hidden;
+}
+
+.centered {
+    font-family: 'Poppins';
+    font-weight: 600;
+    color: white;
+    font-size: 3.5rem;
+    margin-bottom: 4rem;
+    opacity: 0;
+    animation: fadeIn 2s ease-out forwards; /* Animation named fadeIn, lasts 3 seconds */
+    font-family: 'Poppins';
+    background: transparent;
+    z-index: 1;
+
+}
+
+.hint {
+    font-size: 1.8rem;
+}
+
+.icon-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 2rem;
+    color: white;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    border-radius: 2.5rem;
+    background: #193bf6;
+    width: max-content;
+}
+
+.icon-container a {
+    margin: 0 10px; /* Space between icons */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+    color: white;
+}
+
+.icon-container a:hover {
+    color: #495b75; /* Color when mouse hovers over icon */
+}
+
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
